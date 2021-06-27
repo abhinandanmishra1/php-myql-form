@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Recursive&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+   <link rel="stylesheet" href="./style.css">
+    <style>
+      *{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+      }
+      
+      
+    </style>
+    <title>NSS-MMMUT FORM</title>
+</head>
+
+
+<body>
+    <!-- navbar -->
+   
+    <nav class="navbar is-dark " role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item " href="http://www.mmmut.ac.in/NCC-NSS">
+      <figure class="image is-150x150">
+        <img src="./img/newnss.jpg"  class="is-rounded">
+      </figure>
+      <h4 class="m-1 ">NSS-MMMUT</h4>
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item">
+        Home
+      </a>
+          <a class="navbar-item">
+            Contact
+          </a>
+          
+          
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</nav>
+
+<!-- form here -->
+<div class="container m-2 ">
+  <form action="./index.php" method="POST" >
+    <div class="field">
+      <label class="label">Name</label>
+      <div class="control">
+        <input class="input" type="text" id="name" name="name" placeholder="Enter Your Name">
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">College Name</label>
+      <div class="control">
+        <input class="input" id="clgName" name="clgName" type="text" placeholder="Enter Your College Name">
+      </div>
+    </div>
+    
+    
+    
+    <div class="field">
+      <label class="label" >Email</label>
+      <div class="control has-icons-left has-icons-right">
+        <input class="input "id="email" name="email" type="email" placeholder="Enter your email" value="">
+        <span class="icon is-small is-left">
+          <i class="fas fa-envelope"></i>
+        </span>
+        <span class="icon is-small is-right">
+          <i class="fas fa-exclamation-triangle"></i>
+        </span>
+      </div>
+     
+    </div>
+    
+    <div class="field">
+      <label class="label ">Branch</label>
+      <div class="control">
+        <div class="select" id="branch">
+          <select name="branch"> 
+            <option >Select</option>
+            <option>CSE</option>
+            <option>IT</option>
+            <option>ECE</option>
+            <option>CHE</option>
+            <option>ME</option>
+            <option>EE</option>
+            <option>CE</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    
+    <div class="field">
+      <label class="label">Why do you want to join NSS?</label>
+      <div class="control">
+        <textarea class="textarea" id="msg" name="msg" placeholder="Write your explanation"></textarea>
+      </div>
+    </div>
+    
+    
+    <div class="field is-grouped">
+      <div class="control">
+        <button class="button is-link" type="submit">Submit</button>
+      </div>
+      
+    </div>
+  </form>
+</div>
+</body>
+</html>
